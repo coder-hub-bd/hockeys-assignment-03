@@ -2,479 +2,588 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey's Website</title>
-    <link rel="shortcut icon" href="Images/favicon.avif" type="image/x-icon">
-    <!-- Manrope google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- tailwinds and daisy ui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey's Website</title>
+  <link rel="shortcut icon" href="Images/favicon.avif" type="image/x-icon">
+  <!-- Manrope google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- tailwinds and daisy ui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Custom color -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                        button: '#FF4240',
-                    }
-                }
-            }
+  <!-- Custom color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            button: '#FF4240',
+          }
         }
-    </script>
+      }
+    }
+  </script>
 
-    <style>
-        .manrope {
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
+  <style>
+    .manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="main bg-gray-600">
+  <div class="main bg-gray-600">
 
-        <div class="child max-w-4xl m-auto bg-base-100">
-            <!-- navbar section start -->
-            <nav>
-                <div class="navbar ">
-                    <div class="navbar-start">
-                      <div class="dropdown manrope text-base font-normal">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                          <li><a class="text-red-600 font-bold">Home</a></li>
-                          <li>
-                            <a>About</a>
-                          </li>
-                          <li><a>Pages</a></li>
-                          <li><a>Blog</a></li>
-                          <li><a>Contact</a></li>
-                        </ul>
-                      </div>
-                      <a class="manrope text-4xl font-extrabold text-[#131318]">Hockey<span class="text-red-600">'</span>s</a>
-                    </div>
-                    <div class="navbar-center hidden lg:flex manrope text-base font-normal">
-                      <ul class="menu menu-horizontal px-1">
-                        <li><a class="text-red-600 font-bold">Home</a></li>
-                        <li>
-                          
-                            <a>About</a>
-                          
-                        </li>
-                        <li><a>Pages</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
-                      </ul>
-                    </div>
-                    
-                    <div class="navbar-end">
-                        
-                        <div class="search hidden lg:block">
-                          <i class="mr-7 fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        
-                      <a class="btn btn-error text-white text-xl font-bold">Get Ticket</a>
-                    </div>
-                  </div>
-            </nav>
-<!-- navbar section end -->
-        <!-- banner section start -->
-            <div class="banner">
-                <div class="carousel w-full mt-4">
-                    <div id="slide1" class="carousel-item relative w-full">
-                      <img src="./Images/1.png" class="w-full" />
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a> 
-                        <a href="#slide2" class="btn btn-circle">❯</a>
-                      </div>
-                      <!-- meet section start -->
-                      <div class="meet-section rounded-xl absolute bottom-5 right-5 bg-black manrope w-3/5 px-8 py-8">
-                        <h1 class="text-2xl font-extrabold text-[#FFF] my-3">Meet all the heroes from the field</h1>
-                        <p class="text-base font-light text-[#ffffff99]">I apologize for any confusion, but your request is still a bit ambiguous. Could you please specify which field you're referring to, so I can provide relevant.</p>
-                    </div>
-                    <!-- meet section end -->
-                    </div> 
-                    <!-- slide 1 section end -->
-                    <div id="slide2" class="carousel-item relative w-full">
-                      <img src="./Images/banner-02.jpeg" class="w-full" />
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a> 
-                        <a href="#slide3" class="btn btn-circle">❯</a>
-                      </div>
-                      <!-- meet section start -->
-                      <div class="meet-section rounded-xl absolute bottom-5 right-5 bg-black manrope w-3/5 px-8 py-8">
-                        <h1 class="text-2xl font-extrabold text-[#FFF] my-3">Meet all the heroes from the field</h1>
-                        <p class="text-base font-light text-[#ffffff99]">I apologize for any confusion, but your request is still a bit ambiguous. Could you please specify which field you're referring to, so I can provide relevant.</p>
-                    </div>
-                    <!-- meet section end -->
-                    </div> 
-                    <!-- slide 2 section end -->
-                    <div id="slide3" class="carousel-item relative w-full">
-                      <img src="./Images/banner-03.jpeg" class="w-full" />
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a> 
-                        <a href="#slide4" class="btn btn-circle">❯</a>
-                      </div>
-                      <!-- meet section start -->
-                      <div class="meet-section rounded-xl absolute bottom-5 right-5 bg-black manrope w-3/5 px-8 py-8">
-                        <h1 class="text-2xl font-extrabold text-[#FFF] my-3">Meet all the heroes from the field</h1>
-                        <p class="text-base font-light text-[#ffffff99]">I apologize for any confusion, but your request is still a bit ambiguous. Could you please specify which field you're referring to, so I can provide relevant.</p>
-                    </div>
-                    <!-- meet section end -->
-                    </div> 
-                    <!-- slide 3 section end -->
-                    <div id="slide4" class="carousel-item relative w-full">
-                      <img src="./Images/banner-04.jpeg" class="w-full" />
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a> 
-                        <a href="#slide1" class="btn btn-circle">❯</a>
-                      </div>
-                      <!-- meet section start -->
-                      <div class="meet-section rounded-xl absolute bottom-5 right-5 bg-black manrope w-3/5 px-8 py-8">
-                        <h1 class="text-2xl font-extrabold text-[#FFF] my-3">Meet all the heroes from the field</h1>
-                        <p class="text-base font-light text-[#ffffff99]">I apologize for any confusion, but your request is still a bit ambiguous. Could you please specify which field you're referring to, so I can provide relevant.</p>
-                    </div>
-                    <!-- meet section end -->
-                    </div>
-                    <!-- slide 4 section end -->
-                  </div>
-            </div>
-<!-- banner section end -->
-<!-- Professional section start -->
-            <div class="Professional my-5">
-              <div class="main-title text-center manrope">
-                <h1 class="text-4xl font-extrabold text-[#131318]">Professional Hockeys Club</h1>
-                <p class="text-base font-light px-20 mt-3">The Toronto Maple Leafs are a professional ice hockey club based in Toronto, Ontario. They compete in the National Hockey League (NHL).</p>
+    <div class="child max-w-4xl m-auto bg-base-100">
+      <!-- navbar section start -->
+      <nav>
+        <div class="navbar ">
+          <div class="navbar-start">
+            <div class="dropdown manrope text-base font-normal">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
               </div>
-              <!-- card section start -->
-              <div class="cards lg:grid sm:grid-flow-col">
-                <!-- single 1 card section -->
-                <div class="card1">
-                  <div class="card">
-                    <figure class="px-10 pt-10">
-                      <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title text-xl font-semibold text-[#131318]">Prayer Facility</h2>
-                      <p class="text-base text-[#13131899]">The mosque provides <br>a serene prayer.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- single card section end -->
-                <!-- single 2 card section -->
-                <div class="card2">
-                  <div class="card">
-                    <figure class="px-10 pt-10">
-                      <div class="radial-progress text-emerald-400" style="--value:95;" role="progressbar">95%</div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title text-xl font-semibold text-[#131318]">Experienced Coach</h2>
-                      <p class="text-base text-[#13131899]">An accomplished coach<br>proven track record.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- single card section end -->
-                <!-- single 3 card section -->
-                <div class="card3">
-                  <div class="card">
-                    <figure class="px-10 pt-10">
-                      <div class="radial-progress text-orange-400" style="--value:90;" role="progressbar">90%</div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title text-xl font-semibold text-[#131318]">Senior Player</h2>
-                      <p class="text-base text-[#13131899]">Senior player with<br>skills, leadership.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- single card section end -->
-                <!-- single 4 card section -->
-                <div class="card4">
-                  <div class="card">
-                    <figure class="px-10 pt-10">
-                      <div class="radial-progress text-[#2e97ff]" style="--value:80;" role="progressbar">80%</div>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title text-xl font-semibold text-[#131318]">Training Ground</h2>
-                      <p class="text-base text-[#13131899]">Training ground for<br>and performance.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- single card section end -->
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a class="text-red-600 font-bold">Home</a></li>
+                <li>
+                  <a>About</a>
+                </li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="manrope text-4xl font-extrabold text-[#131318]">Hockey<span class="text-red-600">'</span>s</a>
+          </div>
+          <div class="navbar-center hidden lg:flex manrope text-base font-normal">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-red-600 font-bold">Home</a></li>
+              <li>
 
-              </div>
-<!-- card section end -->
-            </div>
-<!-- Professional section end -->
-<!-- Program Sections section start -->
-            <div class="Program-Sections manrope">
-              <div class="manrope text-center">
-                <h1 class="text-4xl text-[#131318]">Program Sections</h1>
-                <p class="text-base text-[#13131899] my-5">Could you please provide more information or clarify<br>what you mean by "Program Sections"?</p>
-              </div>
-              <div class="picture-card lg:flex lg:gap-5 mt-14 mb-5">
-                <div class="ph1 lg:w-1/2 sm:w-full">
-                  <div class="card bg-base-100 shadow-xl image-full">
-                    <figure><img src="./Images/2.png" alt="Shoes" /></figure>
-                    <div class="card-body pt-24">
-                      <h2 class="card-title text-2xl font-extrabold text-[#FFF]">Junior Program</h2>
-                      <p class="text-base font-extralight text-[#FFF]">A Junior Program typically refers to an educational or training initiative aimed at young participants.</p>
-                      <div class="card-actions justify-start">
-                        <button class="btn btn-error text-white text-xl font-bold">Register Now!</button>
-                      </div>
-                    </div>
-                  </div> 
-                </div>
-                <!-- ph1 end -->
-                <div class="ph2 lg:w-1/2 sm:w-full">
-                  <div class="card bg-base-100 shadow-xl image-full">
-                    <figure><img src="./Images/3.png" alt="Shoes" /></figure>
-                    <div class="card-body pt-24">
-                      <h2 class="card-title text-2xl font-extrabold text-[#FFF]">Teenager Program</h2>
-                      <p class="text-base font-extralight text-[#FFF]">A Teenager Program focuses on the development and engagement, providing activities.</p>
-                      <div class="card-actions justify-start">
-                        <button class=" btn btn-error text-white text-xl font-bold">Register Now!</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- ph2 end -->
-              </div>
-              <div class="ph3">
-                <div class="ph3 w-full">
-                  <div class="card bg-base-100 shadow-xl image-full">
-                    <figure><img src="./Images/4.png" alt="Shoes" /></figure>
-                    <div class="card-body pt-36 w-3/4">
-                      <h2 class="card-title text-2xl font-extrabold text-[#FFF]">Professional Program</h2>
-                      <p class="text-base font-extralight text-[#FFF]">A Professional Program offers advanced education and training to individuals seeking expertise in a specific field, enhancing their skills and knowledge for career advancement and specialization.</p>
-                      <div class="card-actions justify-start">
-                        <button class="btn btn-error text-white text-xl font-bold">Register Now!</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <a>About</a>
+
+              </li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="navbar-end">
+
+            <div class="search hidden lg:block">
+              <i class="mr-7 fa-solid fa-magnifying-glass"></i>
             </div>
 
-<!-- Program Sections section end -->
-<!-- Our New Products section start -->
-            <div class="new-products manrope my-10">
-              <div class="text-center">
-                <h1 class="text-4xl font-extrabold text-[#131318]">Our New Products</h1>
-                <p class="text-base text-[#13131899] my-5 px-24 ">Without specific details about the new products. Please share more details or specify your question for a more accurate response.</p>
-              </div>
-              <!-- Card section start -->
-              <div class=" grid grid-cols-2 gap-5 mt-20">
-                <!-- 1 -->
-                <div class=" ">
-                  <div class="feature border rounded-2xl p-3">
-                    <div class="feature1 flex gap-5 justify-items-center ">
-                      <div class="left m-auto">
-                        <img src="./Images/5.png" alt="">
-                      </div>
-                      <div class="right my-2">
-                        <div class="sub1 flex gap-4 ">
-                          <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                          </div>
-                          <h6>5.0</h6>
-                          <i class="fa-regular fa-eye"></i>
-                          <h6>20</h6>
-                          <i class="fa-regular fa-heart"></i>
-                          <h6>200</h6>
-                        </div>
-                        <!-- sub 1 end -->
-                        <div class="sub2 my-3">
-                          <h1 class="text-xl font-extrabold text-[#131318] mb-2">World Cup Flags Football</h1>
-                          <p class="text-base text-[#13131899]">The World Cup is a global football competition<br>organized by FIFA.</p>
-                        </div>
-                        <div class="sub3 flex  gap-5">
-                          <h1 class="text-[#FF4240]">Price - $22.00</h1>
-                          <i class="fa-solid fa-cart-shopping"></i>
-                          <h5 class="text-base text-[#13131899]">Delivery Fee : Free</h5>
-                        </div>
-                      </div>
-                    </div>
-    
-    
-                  </div>
-                </div>
-                <!-- 2 -->
-                <div class="feature border rounded-2xl p-3">
-                  <div class="feature1 flex gap-5 justify-items-center">
-                    <div class="left m-auto">
-                      <img src="./Images/6.png" alt="">
-                    </div>
-                    <div class="right my-2">
-                      <div class="sub1 flex gap-4 ">
-                        <div class="rating">
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                        </div>
-                        <h6>5.0</h6>
-                        <i class="fa-regular fa-eye"></i>
-                        <h6>20</h6>
-                        <i class="fa-regular fa-heart"></i>
-                        <h6>200</h6>
-                      </div>
-                      <!-- sub 1 end -->
-                      <div class="sub2 my-3">
-                        <h1 class="text-xl font-extrabold text-[#131318] mb-2">World Cup Flags Football</h1>
-                        <p class="text-base text-[#13131899]">The World Cup is a global football competition<br>organized by FIFA.</p>
-                      </div>
-                      <div class="sub3 flex  gap-5">
-                        <h1 class="text-[#FF4240]">Price - $22.00</h1>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h5 class="text-base text-[#13131899]">Delivery Fee : Free</h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 3 -->
-                <div class="feature border rounded-2xl p-3">
-                  <div class="feature1 flex gap-5 justify-items-center">
-                    <div class="left m-auto">
-                      <img src="./Images/7.png" alt="">
-                    </div>
-                    <div class="right my-2">
-                      <div class="sub1 flex gap-4 ">
-                        <div class="rating">
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                        </div>
-                        <h6>5.0</h6>
-                        <i class="fa-regular fa-eye"></i>
-                        <h6>20</h6>
-                        <i class="fa-regular fa-heart"></i>
-                        <h6>200</h6>
-                      </div>
-                      <!-- sub 1 end -->
-                      <div class="sub2 my-3">
-                        <h1 class="text-xl font-extrabold text-[#131318] mb-2">World Cup Flags Football</h1>
-                        <p class="text-base text-[#13131899]">The World Cup is a global football competition<br>organized by FIFA.</p>
-                      </div>
-                      <div class="sub3 flex  gap-5">
-                        <h1 class="text-[#FF4240]">Price - $22.00</h1>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h5 class="text-base text-[#13131899]">Delivery Fee : Free</h5>
-                      </div>
-                    </div>
-                  </div>
-  
-  
-                </div>
-                <!-- 4 -->
-                <div class="feature border rounded-2xl p-3">
-                  <div class="feature1 flex gap-5 justify-items-center">
-                    <div class="left m-auto">
-                      <img src="./Images/8.png" alt="">
-                    </div>
-                    <div class="right my-2">
-                      <div class="sub1 flex gap-4 ">
-                        <div class="rating">
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                        </div>
-                        <h6>5.0</h6>
-                        <i class="fa-regular fa-eye"></i>
-                        <h6>20</h6>
-                        <i class="fa-regular fa-heart"></i>
-                        <h6>200</h6>
-                      </div>
-                      <!-- sub 1 end -->
-                      <div class="sub2 my-3">
-                        <h1 class="text-xl font-extrabold text-[#131318] mb-2">World Cup Flags Football</h1>
-                        <p class="text-base text-[#13131899]">The World Cup is a global football competition<br>organized by FIFA.</p>
-                      </div>
-                      <div class="sub3 flex  gap-5">
-                        <h1 class="text-[#FF4240]">Price - $22.00</h1>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h5 class="text-base text-[#13131899]">Delivery Fee : Free</h5>
-                      </div>
-                    </div>
-                  </div>
-  
-  
-                </div>
-                <!-- 5 -->
-                <div class="feature border rounded-2xl p-3">
-                  <div class="feature1 flex gap-5 justify-items-center">
-                    <div class="left m-auto">
-                      <img src="./Images/9.png" alt="">
-                    </div>
-                    <div class="right my-2">
-                      <div class="sub1 flex gap-4 ">
-                        <div class="rating">
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                        </div>
-                        <h6>5.0</h6>
-                        <i class="fa-regular fa-eye"></i>
-                        <h6>20</h6>
-                        <i class="fa-regular fa-heart"></i>
-                        <h6>200</h6>
-                      </div>
-                      <!-- sub 1 end -->
-                      <div class="sub2 my-3">
-                        <h1 class="text-xl font-extrabold text-[#131318] mb-2">World Cup Flags Football</h1>
-                        <p class="text-base text-[#13131899]">The World Cup is a global football competition<br>organized by FIFA.</p>
-                      </div>
-                      <div class="sub3 flex  gap-5">
-                        <h1 class="text-[#FF4240]">Price - $22.00</h1>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h5 class="text-base text-[#13131899]">Delivery Fee : Free</h5>
-                      </div>
-                    </div>
-                  </div>
-  
-  
-                </div>
-                <!-- 6 -->
-                <div class="feature border rounded-2xl p-3">
-                  <div class="feature1 flex gap-5 justify-items-center">
-                    <div class="left m-auto">
-                      <img src="./Images/10.png" alt="">
-                    </div>
-                    <div class="right my-2">
-                      <div class="sub1 flex gap-4 ">
-                        <div class="rating">
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                        </div>
-                        <h6>5.0</h6>
-                        <i class="fa-regular fa-eye"></i>
-                        <h6>20</h6>
-                        <i class="fa-regular fa-heart"></i>
-                        <h6>200</h6>
-                      </div>
-                      <!-- sub 1 end -->
-                      <div class="sub2 my-3">
-                        <h1 class="text-xl font-extrabold text-[#131318] mb-2">World Cup Flags Football</h1>
-                        <p class="text-base text-[#13131899]">The World Cup is a global football competition<br>organized by FIFA.</p>
-                      </div>
-                      <div class="sub3 flex  gap-5">
-                        <h1 class="text-[#FF4240]">Price - $22.00</h1>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <h5 class="text-base text-[#13131899]">Delivery Fee : Free</h5>
-                      </div>
-                    </div>
-                  </div>
-  
-  
-                </div>
-
-              </div>
-
+            <a class="btn btn-error text-white text-xl font-bold">Get Ticket</a>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar section end -->
+      <!-- banner section start -->
+      <div class="banner">
+        <div class="carousel w-full mt-4">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
-<!-- Our New Products section end -->
+            <!-- meet section start -->
+            <div class="meet-section rounded-xl absolute bottom-5 right-5 bg-black manrope w-3/5 px-8 py-8">
+              <h1 class="text-2xl font-extrabold text-[#FFF] my-3">Meet all the heroes from the field</h1>
+              <p class="text-base font-light text-[#ffffff99]">I apologize for any confusion, but your request is still
+                a bit ambiguous. Could you please specify which field you're referring to, so I can provide relevant.
+              </p>
+            </div>
+            <!-- meet section end -->
+          </div>
+          <!-- slide 1 section end -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./Images/banner-02.jpeg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+            <!-- meet section start -->
+            <div class="meet-section rounded-xl absolute bottom-5 right-5 bg-black manrope w-3/5 px-8 py-8">
+              <h1 class="text-2xl font-extrabold text-[#FFF] my-3">Meet all the heroes from the field</h1>
+              <p class="text-base font-light text-[#ffffff99]">I apologize for any confusion, but your request is still
+                a bit ambiguous. Could you please specify which field you're referring to, so I can provide relevant.
+              </p>
+            </div>
+            <!-- meet section end -->
+          </div>
+          <!-- slide 2 section end -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./Images/banner-03.jpeg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+            <!-- meet section start -->
+            <div class="meet-section rounded-xl absolute bottom-5 right-5 bg-black manrope w-3/5 px-8 py-8">
+              <h1 class="text-2xl font-extrabold text-[#FFF] my-3">Meet all the heroes from the field</h1>
+              <p class="text-base font-light text-[#ffffff99]">I apologize for any confusion, but your request is still
+                a bit ambiguous. Could you please specify which field you're referring to, so I can provide relevant.
+              </p>
+            </div>
+            <!-- meet section end -->
+          </div>
+          <!-- slide 3 section end -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./Images/banner-04.jpeg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+            <!-- meet section start -->
+            <div class="meet-section rounded-xl absolute bottom-5 right-5 bg-black manrope w-3/5 px-8 py-8">
+              <h1 class="text-2xl font-extrabold text-[#FFF] my-3">Meet all the heroes from the field</h1>
+              <p class="text-base font-light text-[#ffffff99]">I apologize for any confusion, but your request is still
+                a bit ambiguous. Could you please specify which field you're referring to, so I can provide relevant.
+              </p>
+            </div>
+            <!-- meet section end -->
+          </div>
+          <!-- slide 4 section end -->
+        </div>
+      </div>
+      <!-- banner section end -->
+      <!-- Professional section start -->
+      <div class="Professional my-5">
+        <div class="main-title text-center manrope">
+          <h1 class="text-4xl font-extrabold text-[#131318]">Professional Hockeys Club</h1>
+          <p class="text-base font-light px-20 mt-3">The Toronto Maple Leafs are a professional ice hockey club based in
+            Toronto, Ontario. They compete in the National Hockey League (NHL).</p>
+        </div>
+        <!-- card section start -->
+        <div class="cards lg:grid sm:grid-flow-col">
+          <!-- single 1 card section -->
+          <div class="card1">
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-xl font-semibold text-[#131318]">Prayer Facility</h2>
+                <p class="text-base text-[#13131899]">The mosque provides <br>a serene prayer.</p>
+              </div>
+            </div>
+          </div>
+          <!-- single card section end -->
+          <!-- single 2 card section -->
+          <div class="card2">
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <div class="radial-progress text-emerald-400" style="--value:95;" role="progressbar">95%</div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-xl font-semibold text-[#131318]">Experienced Coach</h2>
+                <p class="text-base text-[#13131899]">An accomplished coach<br>proven track record.</p>
+              </div>
+            </div>
+          </div>
+          <!-- single card section end -->
+          <!-- single 3 card section -->
+          <div class="card3">
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <div class="radial-progress text-orange-400" style="--value:90;" role="progressbar">90%</div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-xl font-semibold text-[#131318]">Senior Player</h2>
+                <p class="text-base text-[#13131899]">Senior player with<br>skills, leadership.</p>
+              </div>
+            </div>
+          </div>
+          <!-- single card section end -->
+          <!-- single 4 card section -->
+          <div class="card4">
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <div class="radial-progress text-[#2e97ff]" style="--value:80;" role="progressbar">80%</div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-xl font-semibold text-[#131318]">Training Ground</h2>
+                <p class="text-base text-[#13131899]">Training ground for<br>and performance.</p>
+              </div>
+            </div>
+          </div>
+          <!-- single card section end -->
 
         </div>
-        <!-- child section end -->
+        <!-- card section end -->
+      </div>
+      <!-- Professional section end -->
+      <!-- Program Sections section start -->
+      <div class="Program-Sections manrope">
+        <div class="manrope text-center">
+          <h1 class="text-4xl text-[#131318]">Program Sections</h1>
+          <p class="text-base text-[#13131899] my-5">Could you please provide more information or clarify<br>what you
+            mean by "Program Sections"?</p>
+        </div>
+        <div class="picture-card lg:flex lg:gap-5 mt-14 mb-5">
+          <div class="ph1 lg:w-1/2 sm:w-full">
+            <div class="card bg-base-100 shadow-xl image-full">
+              <figure><img src="./Images/2.png" alt="Shoes" /></figure>
+              <div class="card-body pt-24">
+                <h2 class="card-title text-2xl font-extrabold text-[#FFF]">Junior Program</h2>
+                <p class="text-base font-extralight text-[#FFF]">A Junior Program typically refers to an educational or
+                  training initiative aimed at young participants.</p>
+                <div class="card-actions justify-start">
+                  <button class="btn btn-error text-white text-xl font-bold">Register Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ph1 end -->
+          <div class="ph2 lg:w-1/2 sm:w-full">
+            <div class="card bg-base-100 shadow-xl image-full">
+              <figure><img src="./Images/3.png" alt="Shoes" /></figure>
+              <div class="card-body pt-24">
+                <h2 class="card-title text-2xl font-extrabold text-[#FFF]">Teenager Program</h2>
+                <p class="text-base font-extralight text-[#FFF]">A Teenager Program focuses on the development and
+                  engagement, providing activities.</p>
+                <div class="card-actions justify-start">
+                  <button class=" btn btn-error text-white text-xl font-bold">Register Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ph2 end -->
+        </div>
+        <div class="ph3">
+          <div class="ph3 w-full">
+            <div class="card bg-base-100 shadow-xl image-full">
+              <figure><img src="./Images/4.png" alt="Shoes" /></figure>
+              <div class="card-body pt-36 w-3/4">
+                <h2 class="card-title text-2xl font-extrabold text-[#FFF]">Professional Program</h2>
+                <p class="text-base font-extralight text-[#FFF]">A Professional Program offers advanced education and
+                  training to individuals seeking expertise in a specific field, enhancing their skills and knowledge
+                  for career advancement and specialization.</p>
+                <div class="card-actions justify-start">
+                  <button class="btn btn-error text-white text-xl font-bold">Register Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Program Sections section end -->
+      <!-- Our New Products section start -->
+      <div class="new-products manrope my-10">
+        <div class="text-center">
+          <h1 class="text-4xl font-extrabold text-[#131318]">Our New Products</h1>
+          <p class="text-base text-[#13131899] my-5 px-24 ">Without specific details about the new products. Please
+            share more details or specify your question for a more accurate response.</p>
+        </div>
+        <!-- Card section start -->
+        <div class=" grid grid-cols-2 gap-5 mt-20">
+          <!-- 1 -->
+          <div class=" ">
+            <div class="feature border rounded-2xl p-3">
+              <div class="feature1 flex gap-5 justify-items-center ">
+                <div class="left m-auto">
+                  <img src="./Images/5.png" alt="">
+                </div>
+                <div class="right my-2">
+                  <div class="sub1 flex gap-4 ">
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                    </div>
+                    <h6>5.0</h6>
+                    <i class="fa-regular fa-eye"></i>
+                    <h6>20</h6>
+                    <i class="fa-regular fa-heart"></i>
+                    <h6>200</h6>
+                  </div>
+                  <!-- sub 1 end -->
+                  <div class="sub2 my-3">
+                    <h1 class="text-xl font-extrabold text-[#131318] mb-2">World Cup Flags Football</h1>
+                    <p class="text-base text-[#13131899]">The World Cup is a global football competition<br>organized by
+                      FIFA.</p>
+                  </div>
+                  <div class="sub3 flex  gap-5">
+                    <h1 class="text-[#FF4240]">Price - $22.00</h1>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h5 class="text-base text-[#13131899]">Delivery Fee : Free</h5>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="feature border rounded-2xl p-3">
+            <div class="feature1 flex gap-5 justify-items-center">
+              <div class="left m-auto">
+                <img src="./Images/6.png" alt="">
+              </div>
+              <div class="right my-2">
+                <div class="sub1 flex gap-4 ">
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                  </div>
+                  <h6>5.0</h6>
+                  <i class="fa-regular fa-eye"></i>
+                  <h6>20</h6>
+                  <i class="fa-regular fa-heart"></i>
+                  <h6>200</h6>
+                </div>
+                <!-- sub 1 end -->
+                <div class="sub2 my-3">
+                  <h1 class="text-xl font-extrabold text-[#131318] mb-2">World Cup Flags Football</h1>
+                  <p class="text-base text-[#13131899]">The World Cup is a global football competition<br>organized by
+                    FIFA.</p>
+                </div>
+                <div class="sub3 flex  gap-5">
+                  <h1 class="text-[#FF4240]">Price - $22.00</h1>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <h5 class="text-base text-[#13131899]">Delivery Fee : Free</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="feature border rounded-2xl p-3">
+            <div class="feature1 flex gap-5 justify-items-center">
+              <div class="left m-auto">
+                <img src="./Images/7.png" alt="">
+              </div>
+              <div class="right my-2">
+                <div class="sub1 flex gap-4 ">
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                  </div>
+                  <h6>5.0</h6>
+                  <i class="fa-regular fa-eye"></i>
+                  <h6>20</h6>
+                  <i class="fa-regular fa-heart"></i>
+                  <h6>200</h6>
+                </div>
+                <!-- sub 1 end -->
+                <div class="sub2 my-3">
+                  <h1 class="text-xl font-extrabold text-[#131318] mb-2">World Cup Flags Football</h1>
+                  <p class="text-base text-[#13131899]">The World Cup is a global football competition<br>organized by
+                    FIFA.</p>
+                </div>
+                <div class="sub3 flex  gap-5">
+                  <h1 class="text-[#FF4240]">Price - $22.00</h1>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <h5 class="text-base text-[#13131899]">Delivery Fee : Free</h5>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- 4 -->
+          <div class="feature border rounded-2xl p-3">
+            <div class="feature1 flex gap-5 justify-items-center">
+              <div class="left m-auto">
+                <img src="./Images/8.png" alt="">
+              </div>
+              <div class="right my-2">
+                <div class="sub1 flex gap-4 ">
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                  </div>
+                  <h6>5.0</h6>
+                  <i class="fa-regular fa-eye"></i>
+                  <h6>20</h6>
+                  <i class="fa-regular fa-heart"></i>
+                  <h6>200</h6>
+                </div>
+                <!-- sub 1 end -->
+                <div class="sub2 my-3">
+                  <h1 class="text-xl font-extrabold text-[#131318] mb-2">World Cup Flags Football</h1>
+                  <p class="text-base text-[#13131899]">The World Cup is a global football competition<br>organized by
+                    FIFA.</p>
+                </div>
+                <div class="sub3 flex  gap-5">
+                  <h1 class="text-[#FF4240]">Price - $22.00</h1>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <h5 class="text-base text-[#13131899]">Delivery Fee : Free</h5>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- 5 -->
+          <div class="feature border rounded-2xl p-3">
+            <div class="feature1 flex gap-5 justify-items-center">
+              <div class="left m-auto">
+                <img src="./Images/9.png" alt="">
+              </div>
+              <div class="right my-2">
+                <div class="sub1 flex gap-4 ">
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                  </div>
+                  <h6>5.0</h6>
+                  <i class="fa-regular fa-eye"></i>
+                  <h6>20</h6>
+                  <i class="fa-regular fa-heart"></i>
+                  <h6>200</h6>
+                </div>
+                <!-- sub 1 end -->
+                <div class="sub2 my-3">
+                  <h1 class="text-xl font-extrabold text-[#131318] mb-2">World Cup Flags Football</h1>
+                  <p class="text-base text-[#13131899]">The World Cup is a global football competition<br>organized by
+                    FIFA.</p>
+                </div>
+                <div class="sub3 flex  gap-5">
+                  <h1 class="text-[#FF4240]">Price - $22.00</h1>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <h5 class="text-base text-[#13131899]">Delivery Fee : Free</h5>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- 6 -->
+          <div class="feature border rounded-2xl p-3">
+            <div class="feature1 flex gap-5 justify-items-center">
+              <div class="left m-auto">
+                <img src="./Images/10.png" alt="">
+              </div>
+              <div class="right my-2">
+                <div class="sub1 flex gap-4 ">
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                  </div>
+                  <h6>5.0</h6>
+                  <i class="fa-regular fa-eye"></i>
+                  <h6>20</h6>
+                  <i class="fa-regular fa-heart"></i>
+                  <h6>200</h6>
+                </div>
+                <!-- sub 1 end -->
+                <div class="sub2 my-3">
+                  <h1 class="text-xl font-extrabold text-[#131318] mb-2">World Cup Flags Football</h1>
+                  <p class="text-base text-[#13131899]">The World Cup is a global football competition<br>organized by
+                    FIFA.</p>
+                </div>
+                <div class="sub3 flex  gap-5">
+                  <h1 class="text-[#FF4240]">Price - $22.00</h1>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <h5 class="text-base text-[#13131899]">Delivery Fee : Free</h5>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Our New Products section end -->
+      <!-- Clients Question section start -->
+      <div class="faq">
+        <div class="text-center manrope">
+          <h1 class="text-4xl font-extrabold text-[#131318]">Clients Question</h1>
+          <p class="text-base text-[#13131899] my-5 px-28 ">Certainly! If you have a specific question or if your client
+            has a question, please provide more details so I can assist you effectively.</p>
+        </div>
+        <div class="faq-left flex gap-5">
+          <div class="faq-left-sub1">
+            <img src="./Images/11.png" alt="">
+          </div>
+          <!-- qus section -->
+          <div class="faq-left-sub2">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                Our Equipment
+              </div>
+              <div class="collapse-content">
+                <p>If you have questions or need information, please provide more details or specify the type of
+                  equipment you're referring to.</p>
+              </div>
+            </div>
+            <!-- qus 1 end -->
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Hockey Training
+              </div>
+              <div class="collapse-content">
+                <p>Hockey training involves developing skills like stickhandling, shooting, and skating, along with
+                  tactical understanding. </p>
+              </div>
+            </div>
+            <!-- qus 2 end -->
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Private Lessons
+              </div>
+              <div class="collapse-content">
+                <p>Private lessons offer personalized instruction in various subjects, sports, or skills tailored to an
+                  individual's specific needs.</p>
+              </div>
+            </div>
+            <!-- qus 3 end -->
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Ski Touring
+              </div>
+              <div class="collapse-content">
+                <p>Ski touring involves skiing through backcountry or off-piste areas, exploring snowy landscapes using
+                  specialized touring.</p>
+              </div>
+            </div>
+            <!-- qus 4 end -->
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Booking
+              </div>
+              <div class="collapse-content">
+                <p>Booking typically refers to the process of reserving or securing services, accommodations, or
+                  appointments in advance.</p>
+              </div>
+            </div>
+            <!-- qus 5 end -->
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Pricings
+              </div>
+              <div class="collapse-content">
+                <p>"Pricings" generally refers to the cost or pricing structure associated with products, services.</p>
+              </div>
+            </div>
+            <!-- qus 6 end -->
+          </div>
+        </div>
+      </div>
+      <!-- Clients Question section end -->
 
     </div>
-    <!-- main section end -->
+    <!-- child section end -->
+
+  </div>
+  <!-- main section end -->
 
 </body>
+
 </html>
